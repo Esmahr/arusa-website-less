@@ -200,6 +200,19 @@
   letter-spacing: 0.075rem;
   font: normal 400 0.75rem/0.875rem Neue Montreal;
 }
+.page6 .row {
+  font: 400 normal 0.75rem/0.875rem Neue Montreal;
+  padding: 0.44rem 0.5rem 0.44rem 1.31rem;
+  display: flex;
+  color: #F5F4F3;
+  letter-spacing: 0.075rem;
+  border-top: 1px solid #DFDEDB;
+  border-bottom: 1px solid #DFDEDB;
+  margin-top: 1.37rem;
+}
+.page6 .row .description {
+  margin-left: auto;
+}
 body {
   margin: 0;
 }
@@ -360,11 +373,108 @@ body .page5 .dresser {
 body .page6 {
   background: #384353;
   color: #F5F4F3;
-  text-align: center;
   padding-bottom: 1rem;
 }
 body .page6 .product-info {
-  height: 769px;
+  display: flex;
+}
+body .page6 .product-info .lookbook {
+  transform: rotate(270deg);
+  width: 1.5rem;
+  height: 1.5rem;
+  padding-right: 1.12rem;
+  margin: auto 0 2.87rem;
+  display: block;
+}
+body .page6 .product-info .lookbook-content {
+  width: 45%;
+  padding: 0 10rem;
+  border-left: 1px solid #DFDEDB;
+  border-right: 1px solid #DFDEDB;
+  text-align: center;
+}
+body .page6 .product-info .lookbook-content h3 {
+  color: #F5F4F3;
+  letter-spacing: -0.14rem;
+  font: 400 normal 3.5rem/4rem Reckless Neue;
+}
+body .page6 .product-info .lookbook-content p {
+  color: #DFDEDB;
+  margin-top: 25rem;
+  font: 400 normal 0.9375rem/1.1875rem Neue Montreal;
+}
+body .page6 .product-info .lookbook-img {
+  width: 55%;
+}
+body .page6 .product-info .lookbook-img .categories,
+body .page6 .product-info .lookbook-img .produced,
+body .page6 .product-info .lookbook-img .materials {
+  margin-top: 0;
+}
+body .page6 .product-info .lookbook-img .materials {
+  margin-top: auto;
+}
+@media (max-width: 698px) {
+  body .page6 .product-info .lookbook-img .main-item {
+    display: none;
+  }
+  body .page6 .product-info .lookbook-img .produced {
+    border: none;
+  }
+}
+body .page6 .product-info .lookbook-img .image-blog {
+  background-color: #E0E0E0;
+  margin: 1.25rem;
+  padding: 1.25rem;
+}
+body .page6 .product-info .lookbook-img .image-blog .img1 {
+  width: 100%;
+}
+body .page6 .product-info .lookbook-img .image-blog .img2 {
+  display: none;
+}
+body .page6 .product-info .lookbook-img .image-blog .row {
+  color: #384353;
+  padding: 0;
+  margin: 0.62rem 0 5rem 0;
+}
+@media (max-width: 698px) {
+  body .page6 .product-info .lookbook-img .image-blog .img2 {
+    display: block;
+    width: 100%;
+  }
+  body .page6 .product-info .lookbook-img .image-blog .img1 {
+    display: none;
+  }
+}
+@media (max-width: 900px) {
+  body .page6 .product-info .lookbook-content {
+    padding: 1rem 1rem 0rem 1rem;
+  }
+}
+@media (max-width: 698px) {
+  body .page6 .product-info {
+    display: block;
+    width: 100%;
+  }
+  body .page6 .product-info .lookbook-content {
+    width: 90%;
+    padding: 1rem 1rem 0rem 1rem;
+    border: none;
+  }
+  body .page6 .product-info .lookbook-content h3 {
+    margin-top: 0rem;
+  }
+  body .page6 .product-info .lookbook-content p {
+    margin-top: 3.5rem;
+  }
+  body .page6 .product-info .lookbook-img {
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+  body .page6 .product-info .lookbook {
+    display: none;
+  }
 }
 body .page6 .section-title {
   margin: 0;
@@ -379,6 +489,7 @@ body .page6 .section-title {
 }
 body .page6 .section-bottom-title {
   color: #F5F4F3;
+  text-align: center;
 }
 body .page7 {
   flex-wrap: wrap;
@@ -440,8 +551,8 @@ body .page7 .text .content p {
   font-weight: 400;
   font-size: 0.9375rem;
   line-height: 1.1875rem;
-  margin-left: 29rem;
-  margin-right: 29rem;
+  margin-left: 25rem;
+  margin-right: 25rem;
   margin-bottom: 5.88rem;
 }
 @media (max-width: 1024px) {
