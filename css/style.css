@@ -1,0 +1,684 @@
+.page3 .content,
+.page6 .content {
+  flex-wrap: wrap;
+  display: flex;
+}
+.page3 .content .product-card,
+.page6 .content .product-card {
+  flex: 1;
+  min-width: calc(50% - 2rem);
+  padding: 0.5rem;
+}
+.page3 .content .product-card img,
+.page6 .content .product-card img {
+  width: 100%;
+}
+.page3 .content .product-card .card-content,
+.page6 .content .product-card .card-content {
+  display: block;
+  margin-top: 0.5rem;
+}
+.page3 .content .product-card .card-content .product-name,
+.page6 .content .product-card .card-content .product-name,
+.page3 .content .product-card .card-content .product-price,
+.page6 .content .product-card .card-content .product-price {
+  display: block;
+  font-size: 0.75rem;
+  text-align: start;
+}
+.page3 .content .product-card .card-content .product-price,
+.page6 .content .product-card .card-content .product-price {
+  margin-top: 1.5rem;
+}
+.page3 .content .space1,
+.page6 .content .space1,
+.page3 .content .space3,
+.page6 .content .space3 {
+  border-bottom: 1px solid #DFDEDB;
+  border-right: 1px solid #DFDEDB;
+}
+.page3 .content .space2,
+.page6 .content .space2,
+.page3 .content .space4,
+.page6 .content .space4 {
+  border-bottom: 1px solid #DFDEDB;
+}
+@media (min-width: 698px) {
+  .page3 .content .product-card,
+  .page6 .content .product-card {
+    flex: 1;
+    min-width: calc(25% - 2rem);
+    margin-top: 1.5rem;
+    border: none;
+  }
+  .page3 .content .product-card .card-content,
+  .page6 .content .product-card .card-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.62rem;
+  }
+  .page3 .content .product-card .card-content .product-name,
+  .page6 .content .product-card .card-content .product-name,
+  .page3 .content .product-card .card-content .product-price,
+  .page6 .content .product-card .card-content .product-price {
+    font: 400 0.85rem/0.875rem Neue Montreal;
+    letter-spacing: 0.075rem;
+    margin: 0;
+    padding: 0 2px;
+  }
+}
+.section-bottom-title {
+  border-top: 1px solid #DFDEDB;
+  border-bottom: 1px solid #DFDEDB;
+  padding: 1.5rem 1rem;
+  font: 400 0.75rem/0.875rem Neue Montreal;
+  letter-spacing: 0.075rem;
+  margin-top: 0rem;
+  margin-bottom: 0;
+}
+@media (min-width: 698px) {
+  .section-bottom-title {
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+  }
+}
+.section-title {
+  border-top: 1px solid #DFDEDB;
+  border-bottom: 1px solid #DFDEDB;
+  padding: 1.5rem 1rem;
+  letter-spacing: -0.045rem;
+  font: normal 400 2.25rem/2.625rem Reckless Neue;
+}
+.page4 .article-text {
+  flex: 1;
+  width: 50%;
+  flex-shrink: 0;
+  padding: 13.19rem 9.81rem 11.19rem 5rem;
+}
+.page4 .article-text .title {
+  color: #FCFDFD;
+  font-style: normal;
+  letter-spacing: -0.045rem;
+  font: 400 2.25rem/2.625rem Reckless Neue;
+}
+.page4 .article-text .paragraph {
+  color: #DFDEDB;
+  font-style: normal;
+  letter-spacing: 0.055rem;
+  font: 400 0.9375rem/1.1875rem Neue Montreal;
+}
+.page4 .article-text .subtitle {
+  color: #FCFDFD;
+  font-style: normal;
+  letter-spacing: 0.075rem;
+  font: 400 0.75rem/0.875rem Neue Montreal;
+}
+.page4 .article-image {
+  width: 50%;
+}
+.page4 .article-image img {
+  width: 100%;
+  height: 100%;
+  flex-shrink: 0;
+}
+.page0 .footer {
+  flex-wrap: wrap;
+  display: flex;
+}
+.page0 .footer .footer-card {
+  flex: 1;
+  min-width: calc(25% - 2rem);
+  border: none;
+  border-bottom: 1px solid #DFDEDB;
+}
+.page0 .footer .footer-card ul .footer-card-title {
+  color: #F5F4F3;
+  letter-spacing: 0.075rem;
+  margin-bottom: 1rem;
+  font: normal 400 0.75rem/0.875rem Neue Montreal;
+}
+.page0 .footer .footer-card ul li {
+  list-style-type: none;
+  color: #F5F4F3;
+  letter-spacing: 0.075rem;
+  margin-bottom: 0.88rem;
+  font: normal 400 0.75rem/0.875rem Neue Montreal;
+}
+@media (max-width: 698px) {
+  .page0 .footer .footer-card {
+    min-width: calc(50% - 2rem);
+  }
+}
+.page0 .footer .card1,
+.page0 .footer .card2,
+.page0 .footer .card3 {
+  border-right: 1px solid #DFDEDB;
+}
+@media (max-width: 698px) {
+  .page0 .footer .card1,
+  .page0 .footer .card2 {
+    margin-top: 3.56rem;
+    border-top: 1px solid #DFDEDB;
+  }
+}
+.page9 .faq {
+  margin: 3rem;
+  height: 42.3125rem;
+  background: url('/assets/img/page9/Rectangle\ 552.png') center center / cover no-repeat;
+  text-align: center;
+}
+@media (max-width: 698px) {
+  .page9 .faq {
+    margin: 0rem;
+  }
+}
+.page9 .faq .faq-title {
+  color: #F5F4F3;
+  text-align: center;
+  line-height: 100%;
+  letter-spacing: -0.225rem;
+  font: normal 400 4.5rem Reckless Neue;
+  padding: 14.19rem 10rem 3rem 10rem;
+}
+@media (max-width: 698px) {
+  .page9 .faq .faq-title {
+    font-size: 2.25rem;
+    line-height: 2.625rem;
+    letter-spacing: -0.045rem;
+    padding: 14.19rem 2rem 3rem 2rem;
+  }
+}
+.page9 .faq .faq-input {
+  background-color: transparent;
+  border-radius: 0.5rem;
+  border: 1px solid #DFDEDB;
+  padding: 1rem;
+  width: 21.5rem;
+}
+.page9 .faq .faq-input::placeholder {
+  color: #F5F4F3;
+  letter-spacing: 0.075rem;
+  font: normal 400 0.75rem/0.875rem Neue Montreal;
+}
+body {
+  margin: 0;
+}
+body .page1 {
+  height: 1024px;
+  color: #FCFDFD;
+  background-color: #FCFDFD;
+  overflow-x: hidden;
+  background: url('/assets/img/page1/page1.png') center center / cover no-repeat;
+}
+body .page1 .navbar {
+  padding: 1rem 4.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+body .page1 .navbar-item {
+  display: flex;
+  align-items: center;
+}
+body .page1 .navbar-item .icon-group .line {
+  width: 27px;
+  height: 1px;
+  margin-bottom: 0.31rem;
+  background-color: #FCFDFD;
+}
+body .page1 .navbar-item .text {
+  margin: 1rem;
+  font-size: 0.85rem;
+  letter-spacing: 0.075rem;
+}
+body .page1 .navbar-item .profile {
+  padding: 0.425rem 0.625rem;
+  border-radius: 3.125rem;
+  background: #384353;
+  font-size: 1rem;
+  text-align: center;
+}
+body .page1 .content {
+  text-align: center;
+  justify-content: center;
+  padding-top: 10rem;
+}
+body .page1 .content .section-title-main {
+  font: normal 400 7rem/90% Reckless Neue;
+  letter-spacing: -0.3rem;
+  margin-bottom: 5rem;
+}
+body .page1 .content button {
+  padding: 0.5rem 2.25rem;
+  border: none;
+  border-radius: 0.5rem;
+  background: #F8F4E7;
+  font: 400 0.95rem/0.875rem Neue Montreal;
+  letter-spacing: 0.075rem;
+}
+@media (max-width: 698px) {
+  body .page1 {
+    height: 701px;
+  }
+  body .page1 .navbar {
+    padding: 1rem;
+  }
+  body .page1 .content {
+    padding-top: 10.44rem;
+  }
+  body .page1 .content .section-title-main {
+    font-size: 2.25rem;
+    line-height: 2.625rem;
+    letter-spacing: -0.045rem;
+    margin-bottom: 2.5rem;
+  }
+}
+body .page3 {
+  color: #323334;
+  text-align: center;
+}
+body .page3 .section-title {
+  margin-bottom: 0;
+}
+body .page3 .section-bottom-title {
+  color: #323334;
+}
+@media (min-width: 698px) {
+  body .page3 .product-name,
+  body .page3 .product-price {
+    color: #384353;
+  }
+}
+body .page4 {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #384353;
+  margin-top: 0;
+}
+@media (max-width: 915px) {
+  body .page4 {
+    flex-direction: column;
+  }
+  body .page4 .article-text {
+    flex-shrink: 0;
+    order: 2;
+    width: 90%;
+    padding: 1rem 1rem 1rem 1rem;
+  }
+  body .page4 .article-image {
+    width: 100%;
+    padding-top: 1rem;
+    text-align: center;
+  }
+  body .page4 .article-image img {
+    width: 94%;
+  }
+}
+body .page5 {
+  height: 1081px;
+  overflow-x: hidden;
+  background: url('/assets/img/page5/page5.png') center center / cover no-repeat;
+}
+body .page5 .product {
+  position: relative;
+}
+body .page5 .product .card-image {
+  background-color: #fff;
+  width: 20rem;
+}
+body .page5 .product .card-image img {
+  height: 21.3125rem;
+  align-self: stretch;
+  padding: 1.25rem 1.25rem 0rem 1.25rem;
+}
+body .page5 .product .card-content {
+  display: flex;
+  justify-content: space-between;
+}
+body .page5 .product .card-content .product-name,
+body .page5 .product .card-content .product-price {
+  color: #384353;
+  font: 400 0.85rem/0.875rem Neue Montreal;
+  letter-spacing: 0.075rem;
+  margin: 0;
+  padding: 0.62rem 1.25rem 1.25rem 1.25rem;
+}
+body .page5 .chair {
+  margin: 6.06rem 0 0 7.87rem;
+}
+body .page5 .dresser {
+  margin: 0 6.75rem 9.81rem 0;
+  float: right;
+}
+@media (max-width: 985px) {
+  body .page5 {
+    height: 664px;
+  }
+  body .page5 .product {
+    position: fixed;
+  }
+}
+body .page6 {
+  background: #384353;
+  color: #F5F4F3;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+body .page6 .product-info {
+  height: 769px;
+}
+body .page6 .section-title {
+  margin: 0;
+  color: #F5F4F3;
+  text-align: center;
+}
+@media (min-width: 698px) {
+  body .page6 .product-name,
+  body .page6 .product-price {
+    color: #F5F4F3;
+  }
+}
+body .page6 .section-bottom-title {
+  color: #F5F4F3;
+}
+body .page7 {
+  flex-wrap: wrap;
+}
+body .page7 .text,
+body .page7 .images {
+  display: flex;
+}
+body .page7 .text .detail,
+body .page7 .images .detail {
+  transform: rotate(270deg);
+  width: 1.5rem;
+  height: 1.5rem;
+  padding-right: 1.12rem;
+  margin-top: auto;
+  margin-bottom: 2.87rem;
+  display: block;
+}
+@media (max-width: 698px) {
+  body .page7 .text,
+  body .page7 .images {
+    display: contents;
+  }
+  body .page7 .text .detail,
+  body .page7 .images .detail {
+    display: none;
+  }
+}
+body .page7 .text .detail {
+  color: #fff;
+  user-select: none;
+}
+body .page7 .text .content {
+  border-left: 1px solid #DFDEDB;
+  text-align: center;
+  color: #323334;
+}
+body .page7 .text .content h4 {
+  text-align: center;
+  font-family: Reckless Neue;
+  font-size: 4.5rem;
+  line-height: 100%;
+  font-weight: 400;
+  letter-spacing: -0.125rem;
+  margin-top: 10rem;
+  margin-bottom: 2.5rem;
+}
+body .page7 .text .content h6 {
+  font-family: Neue Montreal;
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 0.875rem;
+  letter-spacing: 0.075rem;
+  margin-top: 2.5rem;
+}
+body .page7 .text .content p {
+  text-align: center;
+  font-family: Neue Montreal;
+  font-weight: 400;
+  font-size: 0.9375rem;
+  line-height: 1.1875rem;
+  margin-left: 29rem;
+  margin-right: 29rem;
+  margin-bottom: 5.88rem;
+}
+@media (max-width: 1024px) {
+  body .page7 .text .content p {
+    margin-left: 10rem;
+    margin-right: 10rem;
+  }
+}
+@media (max-width: 698px) {
+  body .page7 .text .content p {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 3.5rem;
+  }
+}
+@media (max-width: 698px) {
+  body .page7 .text .content {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  body .page7 .text .content h4 {
+    font-size: 2.25rem;
+  }
+}
+body .page7 .images {
+  border-top: 1px solid #DFDEDB;
+  width: 100%;
+}
+body .page7 .images .order1 {
+  padding: 0.75rem;
+  padding-bottom: 1.13rem;
+  border-left: 1px solid #DFDEDB;
+  border-right: 1px solid #DFDEDB;
+}
+body .page7 .images .order1 img {
+  max-width: 100%;
+  height: 100%;
+}
+@media (max-width: 698px) {
+  body .page7 .images .order1 {
+    padding: 0rem;
+  }
+}
+body .page7 .images .order2 {
+  padding: 0.75rem;
+  padding-bottom: 1.13rem;
+}
+body .page7 .images .order2 img {
+  max-width: 100%;
+  height: auto;
+}
+body .page7 .images .order2 .img2 {
+  margin-bottom: 2rem;
+}
+@media (max-width: 698px) {
+  body .page7 .images .order2 {
+    display: flex;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+  body .page7 .images .order2 .img2 {
+    margin-bottom: 0rem;
+    padding-right: 0.5rem;
+  }
+  body .page7 .images .order2 .img2 img {
+    height: 26vh;
+  }
+  body .page7 .images .order2 .img3 {
+    padding-right: 0.53rem;
+  }
+}
+body .page8 .product-view {
+  overflow-x: hidden;
+  background: url('/assets/img/page8/Screenshot\ 2022-09-06\ at\ 20.04\ 3.png') center center / cover no-repeat;
+  height: 41.5625rem;
+  text-align: center;
+  padding-top: 6.44rem;
+}
+@media (max-width: 698px) {
+  body .page8 .product-view {
+    height: 41.5625rem;
+  }
+  body .page8 .product-view img {
+    position: fixed;
+  }
+}
+body .page9 .product-detail {
+  flex-wrap: wrap;
+  display: flex;
+}
+body .page9 .product-detail .product-article {
+  flex: 1;
+  min-width: calc(33% - 2rem);
+  border: none;
+  border-bottom: 1px solid #DFDEDB;
+  padding-top: 1.5rem;
+}
+body .page9 .product-detail .product-article img {
+  width: 100%;
+}
+body .page9 .product-detail .product-article .article-text {
+  color: #384353;
+}
+body .page9 .product-detail .product-article .article-text .title {
+  letter-spacing: -0.03rem;
+  margin-bottom: 1.5rem;
+  font: normal 400 1.5rem/1.75rem Reckless Neue;
+}
+body .page9 .product-detail .product-article .article-text .paragraph {
+  margin-bottom: 1.5rem;
+  font: normal 400 0.9375rem/1.1875rem Neue Montreal;
+}
+body .page9 .product-detail .product-article .article-text .subtitle {
+  margin-bottom: 4.38rem;
+}
+body .page9 .product-detail .article1,
+body .page9 .product-detail .article2 {
+  border-right: 1px solid #DFDEDB;
+  padding-right: 0.69rem;
+}
+body .page9 .product-detail .article1 {
+  padding-left: 0.94rem;
+}
+body .page9 .product-detail .article3 {
+  padding-right: 0.94rem;
+}
+body .page9 .product-detail .article2,
+body .page9 .product-detail .article3 {
+  padding-left: 0.69rem;
+}
+@media (max-width: 698px) {
+  body .page9 .product-detail {
+    flex-wrap: nowrap;
+    display: block;
+  }
+  body .page9 .product-detail .product-article {
+    border: none;
+  }
+  body .page9 .product-detail .article1 .subtitle,
+  body .page9 .product-detail .article2 .subtitle {
+    margin-bottom: 1rem;
+  }
+}
+body .page9 .section-bottom-title {
+  text-align: center;
+  color: #323334;
+  margin-bottom: 0rem;
+  margin-top: 0rem;
+}
+body .page9 .section-title {
+  color: #323334;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0rem;
+}
+body .page9 .content {
+  display: flex;
+}
+body .page9 .content .article-text {
+  width: 50%;
+  padding-top: 8.88rem;
+  border-left: 1px solid #DFDEDB;
+  padding-left: 2.06rem;
+  padding-right: 2.06rem;
+}
+body .page9 .content .article-text h3 {
+  color: #323334;
+  font-family: Reckless Neue;
+  font-size: 3.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 4rem;
+  letter-spacing: -0.14rem;
+  margin: 0rem;
+}
+body .page9 .content .article-text p {
+  color: #384353;
+  font-family: Neue Montreal;
+  font-size: 0.9375rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.1875rem;
+  margin-top: 3.5rem;
+  margin-bottom: 3.5rem;
+}
+body .page9 .content .article-text .subtitle {
+  color: #323334;
+  font-family: Neue Montreal;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 0.875rem;
+  letter-spacing: 0.075rem;
+}
+body .page9 .content .article-image {
+  width: 50%;
+  flex-wrap: wrap;
+  overflow: hidden;
+  margin-top: 2.6rem;
+  margin-bottom: 1.68rem;
+}
+body .page9 .content .detail {
+  transform: rotate(270deg);
+  width: 1.5rem;
+  height: 1.5rem;
+  padding-right: 1.12rem;
+  margin-top: auto;
+  margin-bottom: 2.87rem;
+  display: block;
+}
+@media (max-width: 698px) {
+  body .page9 .content {
+    display: none;
+  }
+}
+body .page9 .change {
+  display: none;
+}
+@media (max-width: 698px) {
+  body .page9 .change {
+    display: flex;
+  }
+}
+body .page0 {
+  background-color: #384353;
+  padding-bottom: 1.37rem;
+}
+body .page0 .logo {
+  padding: 0 3.5rem;
+}
+body .page0 .logo img {
+  padding: 4rem 0;
+  flex-wrap: wrap;
+  width: 100%;
+}
+body .page0 .section-bottom-title {
+  text-align: center;
+  color: #F5F4F3;
+  margin-bottom: 0;
+}

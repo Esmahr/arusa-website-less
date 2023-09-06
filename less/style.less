@@ -1,0 +1,516 @@
+@import "content.less";
+@import "section-bottom-title.less";
+@import "section-title.less";
+@import "article.less";
+@import "footer.less";
+@import "faq.less";
+
+body {
+    margin: 0;
+
+    .page1 {
+        height: 1024px;
+        color: #FCFDFD;
+        background-color: #FCFDFD;
+        overflow-x: hidden;
+        background: url('/assets/img/page1/page1.png') center center/cover no-repeat;
+
+        @import "navbar.less";
+
+        .content {
+            text-align: center;
+            justify-content: center;
+            padding-top: 10rem;
+
+            .section-title-main {
+                font: normal 400 7rem/90% Reckless Neue;
+                letter-spacing: -0.3rem;
+                margin-bottom: 5rem;
+            }
+
+            button {
+                padding: 0.5rem 2.25rem;
+                border: none;
+                border-radius: 0.5rem;
+                background: #F8F4E7;
+                font: 400 0.95rem/0.875rem Neue Montreal;
+                letter-spacing: 0.075rem;
+            }
+        }
+
+        @media (max-width: 698px) {
+            height: 701px;
+
+            .navbar {
+                padding: 1rem;
+            }
+
+            .content {
+                padding-top: 10.44rem;
+
+                .section-title-main {
+                    font-size: 2.25rem;
+                    line-height: 2.625rem;
+                    letter-spacing: -0.045rem;
+                    margin-bottom: 2.5rem;
+                }
+            }
+        }
+    }
+
+    .page3 {
+        color: #323334;
+        text-align: center;
+
+        .section-title {
+            margin-bottom: 0;
+        }
+
+        .section-bottom-title {
+            color: #323334;
+        }
+
+        @media (min-width: 698px) {
+
+            .product-name,
+            .product-price {
+                color: #384353;
+            }
+        }
+
+    }
+
+    .page4 {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #384353;
+        margin-top: 0;
+
+        @media (max-width: 915px) {
+            flex-direction: column;
+
+            .article-text {
+                flex-shrink: 0;
+                order: 2;
+                width: 90%;
+                padding: 1rem 1rem 1rem 1rem;
+            }
+
+            .article-image {
+                width: 100%;
+                padding-top: 1rem;
+                text-align: center;
+
+                img {
+                    width: 94%;
+                }
+            }
+        }
+    }
+
+    .page5 {
+        height: 1081px;
+        overflow-x: hidden;
+        background: url('/assets/img/page5/page5.png') center center/cover no-repeat;
+
+        @import "product.less";
+
+        .chair {
+            margin: 6.06rem 0 0 7.87rem;
+        }
+
+        .dresser {
+            margin: 0 6.75rem 9.81rem 0;
+            float: right;
+        }
+
+        @media (max-width:985px) {
+            height: 664px;
+
+            .product {
+                position: fixed;
+            }
+        }
+    }
+
+    .page6 {
+        background: #384353;
+        color: #F5F4F3;
+        text-align: center;
+        padding-bottom: 1rem;
+
+        .product-info {
+            height: 769px;
+        }
+
+        .section-title {
+            margin: 0;
+            color: #F5F4F3;
+            text-align: center;
+        }
+
+        @media (min-width: 698px) {
+
+            .product-name,
+            .product-price {
+                color: #F5F4F3;
+            }
+        }
+
+        .section-bottom-title {
+            color: #F5F4F3;
+        }
+    }
+
+    .page7 {
+        flex-wrap: wrap;
+
+        .text,
+        .images {
+            display: flex;
+
+            .detail {
+                transform: rotate(270deg);
+                width: 1.5rem;
+                height: 1.5rem;
+                padding-right: 1.12rem;
+                margin-top: auto;
+                margin-bottom: 2.87rem;
+                display: block;
+            }
+
+            @media (max-width: 698px) {
+                display: contents;
+
+                .detail {
+                    display: none;
+                }
+            }
+
+        }
+
+        .text {
+            .detail {
+                color: #fff;
+                user-select: none;
+            }
+
+            .content {
+                border-left: 1px solid #DFDEDB;
+                text-align: center;
+                color: #323334;
+
+                h4 {
+                    text-align: center;
+                    font-family: Reckless Neue;
+                    font-size: 4.5rem;
+                    line-height: 100%;
+                    font-weight: 400;
+                    letter-spacing: -0.125rem;
+                    margin-top: 10rem;
+                    margin-bottom: 2.5rem;
+                }
+
+                h6 {
+                    font-family: Neue Montreal;
+                    font-size: 0.75rem;
+                    font-weight: 400;
+                    line-height: 0.875rem;
+                    letter-spacing: 0.075rem;
+                    margin-top: 2.5rem;
+                }
+
+                p {
+                    text-align: center;
+                    font-family: Neue Montreal;
+                    font-weight: 400;
+                    font-size: 0.9375rem;
+                    line-height: 1.1875rem;
+                    margin-left: 29rem;
+                    margin-right: 29rem;
+                    margin-bottom: 5.88rem;
+
+                    @media (max-width: 1024px) {
+                        margin-left: 10rem;
+                        margin-right: 10rem;
+                    }
+
+                    @media (max-width: 698px) {
+                        margin-left: 1rem;
+                        margin-right: 1rem;
+                        margin-bottom: 3.5rem;
+                    }
+
+                }
+
+                @media (max-width: 698px) {
+                    padding-left: 1rem;
+                    padding-right: 1rem;
+
+                    h4 {
+                        font-size: 2.25rem;
+                    }
+                }
+            }
+        }
+
+        .images {
+            border-top: 1px solid #DFDEDB;
+            width: 100%;
+
+            .order1 {
+                padding: .75rem;
+                padding-bottom: 1.13rem;
+                border-left: 1px solid #DFDEDB;
+                border-right: 1px solid #DFDEDB;
+
+                img {
+                    max-width: 100%;
+                    height: 100%;
+                }
+
+                @media (max-width: 698px) {
+                    padding: 0rem;
+                }
+            }
+
+            .order2 {
+                padding: .75rem;
+                padding-bottom: 1.13rem;
+
+                img {
+                    max-width: 100%;
+                    height: auto;
+                }
+
+                .img2 {
+                    margin-bottom: 2rem;
+                }
+
+                @media (max-width: 698px) {
+                    display: flex;
+                    padding-right: .5rem;
+                    padding-left: .5rem;
+
+                    .img2 {
+                        margin-bottom: 0rem;
+                        padding-right: .5rem;
+
+                        img {
+                            height: 26vh;
+                        }
+                    }
+
+                    .img3 {
+                        padding-right: .53rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .page8 {
+        .product-view {
+            overflow-x: hidden;
+            background: url('/assets/img/page8/Screenshot\ 2022-09-06\ at\ 20.04\ 3.png') center center/cover no-repeat;
+            height: 41.5625rem;
+            text-align: center;
+            padding-top: 6.44rem;
+
+            @media (max-width: 698px) {
+                height: 41.5625rem;
+
+                img {
+                    position: fixed;
+                }
+            }
+        }
+    }
+
+    .page9 {
+        .product-detail {
+            flex-wrap: wrap;
+            display: flex;
+
+            .product-article {
+                flex: 1;
+                min-width: calc(33% - 2rem);
+                border: none;
+                border-bottom: 1px solid #DFDEDB;
+                padding-top: 1.5rem;
+
+                img {
+                    width: 100%;
+                }
+
+                .article-text {
+                    color: #384353;
+
+                    .title {
+                        letter-spacing: -0.03rem;
+                        margin-bottom: 1.5rem;
+                        font: normal 400 1.5rem/1.75rem Reckless Neue;
+                    }
+
+                    .paragraph {
+                        margin-bottom: 1.5rem;
+                        font: normal 400 0.9375rem/1.1875rem Neue Montreal;
+                    }
+
+                    .subtitle {
+                        margin-bottom: 4.38rem;
+                    }
+                }
+            }
+
+            .article1,
+            .article2 {
+                border-right: 1px solid #DFDEDB;
+                padding-right: .69rem;
+            }
+
+            .article1 {
+                padding-left: .94rem;
+            }
+
+            .article3 {
+                padding-right: .94rem;
+            }
+
+            .article2,
+            .article3 {
+                padding-left: .69rem;
+            }
+
+            @media (max-width: 698px) {
+                flex-wrap: nowrap;
+                display: block;
+
+                .product-article {
+                    border: none;
+                }
+
+                .article1,
+                .article2 {
+                    .subtitle {
+                        margin-bottom: 1rem;
+                    }
+                }
+            }
+        }
+
+        .section-bottom-title {
+            text-align: center;
+            color: #323334;
+            margin-bottom: 0rem;
+            margin-top: 0rem;
+        }
+
+        .section-title {
+            color: #323334;
+            text-align: center;
+            margin-top: 0;
+            margin-bottom: 0rem;
+        }
+
+        .content {
+            display: flex;
+
+            .article-text {
+                width: 50%;
+                padding-top: 8.88rem;
+                border-left: 1px solid #DFDEDB;
+                padding-left: 2.06rem;
+                padding-right: 2.06rem;
+
+                h3 {
+                    color: #323334;
+                    font-family: Reckless Neue;
+                    font-size: 3.5rem;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 4rem;
+                    letter-spacing: -0.14rem;
+                    margin: 0rem;
+                }
+
+                p {
+                    color: #384353;
+                    font-family: Neue Montreal;
+                    font-size: 0.9375rem;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 1.1875rem;
+                    margin-top: 3.5rem;
+                    margin-bottom: 3.5rem;
+                }
+
+                .subtitle {
+                    color: #323334;
+                    font-family: Neue Montreal;
+                    font-size: 0.75rem;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 0.875rem;
+                    letter-spacing: 0.075rem;
+                }
+            }
+
+            .article-image {
+                width: 50%;
+                flex-wrap: wrap;
+                overflow: hidden;
+                margin-top: 2.6rem;
+                margin-bottom: 1.68rem;
+            }
+
+            .detail {
+                transform: rotate(270deg);
+                width: 1.5rem;
+                height: 1.5rem;
+                padding-right: 1.12rem;
+                margin-top: auto;
+                margin-bottom: 2.87rem;
+                display: block;
+            }
+
+            @media (max-width: 698px) {
+
+                display: none;
+
+            }
+
+        }
+
+        .change {
+            display: none;
+
+            @media (max-width: 698px) {
+
+                display: flex;
+
+            }
+        }
+    }
+
+    .page0 {
+        background-color: #384353;
+        padding-bottom: 1.37rem;
+
+        .logo {
+            padding: 0 3.5rem;
+
+            img {
+                padding: 4rem 0;
+                flex-wrap: wrap;
+                width: 100%;
+            }
+        }
+
+        .section-bottom-title {
+            text-align: center;
+            color: #F5F4F3;
+            margin-bottom: 0;
+        }
+    }
+}

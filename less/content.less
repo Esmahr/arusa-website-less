@@ -1,0 +1,68 @@
+.page3,
+.page6{
+
+    .content {
+        flex-wrap: wrap;
+        display: flex;
+
+        .product-card {
+            flex: 1;
+            min-width: calc(50% - 2rem);
+            padding: .5rem;
+
+            img {
+                width: 100%;
+            }
+
+            .card-content {
+                display: block;
+                margin-top: .5rem;
+
+                .product-name,
+                .product-price {
+                    display: block;
+                    font-size: 0.75rem;
+                    text-align: start;
+                }
+
+                .product-price {
+                    margin-top: 1.5rem;
+                }
+            }
+        }
+
+        .space1,
+        .space3 {
+            border-bottom: 1px solid #DFDEDB;
+            border-right: 1px solid #DFDEDB;
+        }
+
+        .space2,
+        .space4 {
+            border-bottom: 1px solid #DFDEDB;
+        }
+
+        @media (min-width: 698px) {
+            .product-card {
+                flex: 1;
+                min-width: calc(25% - 2rem);
+                margin-top: 1.5rem;
+                border: none;
+
+                .card-content {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: .62rem;
+
+                    .product-name,
+                    .product-price {
+                        font: 400 0.85rem/0.875rem Neue Montreal;
+                        letter-spacing: 0.075rem;
+                        margin: 0;
+                        padding: 0 2px;
+                    }
+                }
+            }
+        }
+    }
+}
