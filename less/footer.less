@@ -1,49 +1,46 @@
-.page0{
-    .footer {
-        flex-wrap: wrap;
-        display: flex;
+.footer {
+    flex-wrap: wrap;
+    display: flex;
 
-        .footer-card {
-            flex: 1;
-            min-width: calc(25% - 2rem);
-            border: none;
-            border-bottom: 1px solid #DFDEDB;
+    .footer-card {
+        flex: 1;
+        min-width: calc(25% - 2rem);
+        border: none;
+        border-bottom: 1px solid #DFDEDB;
 
-            ul {
-                .footer-card-title {
-                    color: #F5F4F3;
-                    letter-spacing: 0.075rem;
-                    margin-bottom: 1rem;
-                    font: normal 400 0.75rem/0.875rem Neue Montreal;
-                }
-
-                li {
-                    list-style-type: none;
-                    color: #F5F4F3;
-                    letter-spacing: 0.075rem;
-                    margin-bottom: 0.88rem;
-                    font: normal 400 0.75rem/0.875rem Neue Montreal;
-                }
+        ul {
+            .footer-card-title {
+                color: #F5F4F3;
+                letter-spacing: 0.075rem;
+                margin-bottom: 1rem;
+                font: normal 400 0.75rem/0.875rem Neue Montreal;
             }
 
-            @media (max-width: 698px) {
-                min-width: calc(50% - 2rem);
+            li {
+                list-style-type: none;
+                color: #F5F4F3;
+                letter-spacing: 0.075rem;
+                margin-bottom: 0.88rem;
+                font: normal 400 0.75rem/0.875rem Neue Montreal;
             }
-        }
-
-        .card1,
-        .card2,
-        .card3 {
-            border-right: 1px solid #DFDEDB;
         }
 
         @media (max-width: 698px) {
-
-            .card1,
-            .card2 {
-                margin-top: 3.56rem;
-                border-top: 1px solid #DFDEDB;
-            }
+            min-width: calc(50% - 2rem);
         }
+    }
+
+    .card1,
+    .card2 {
+        border-right: 1px solid #DFDEDB;
+
+        @media (max-width: 698px) {
+            margin-top: 3.56rem;
+            border-top: 1px solid #DFDEDB;
+        }
+    }
+
+    .card3 {
+        border-right: 1px solid #DFDEDB;
     }
 }

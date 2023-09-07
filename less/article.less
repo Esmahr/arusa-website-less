@@ -1,29 +1,31 @@
-.page4{
+.page4 {
     .article-text {
         flex: 1;
         width: 50%;
         flex-shrink: 0;
         padding: 13.19rem 9.81rem 11.19rem 5rem;
+        color: #FCFDFD;
 
         .title {
-            color: #FCFDFD;
-            font-style: normal;
             letter-spacing: -0.045rem;
             font: 400 2.25rem/2.625rem Reckless Neue;
         }
 
         .paragraph {
             color: #DFDEDB;
-            font-style: normal;
             letter-spacing: 0.055rem;
             font: 400 0.9375rem/1.1875rem Neue Montreal;
         }
 
         .subtitle {
-            color: #FCFDFD;
-            font-style: normal;
             letter-spacing: 0.075rem;
             font: 400 0.75rem/0.875rem Neue Montreal;
+        }
+
+        @media (max-width: 915px) {
+            order: 2;
+            width: 90%;
+            padding: 1rem;
         }
     }
 
@@ -33,7 +35,16 @@
         img {
             width: 100%;
             height: 100%;
-            flex-shrink: 0;
+        }
+
+        @media (max-width: 915px) {
+            width: 100%;
+            padding-top: 1rem;
+            text-align: center;
+
+            img {
+                width: 94%;
+            }
         }
     }
 }
