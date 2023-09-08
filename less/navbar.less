@@ -11,7 +11,7 @@
             width: 27px;
             height: 1px;
             margin-bottom: .31rem;
-            background-color: #FCFDFD;
+            background-color: @text-color;
         }
 
         .text {
@@ -23,13 +23,13 @@
         .profile {
             padding: 0.425rem 0.625rem;
             border-radius: 3.125rem;
-            background: #384353;
+            background: @text-color-dark;
             font-size: 1rem;
             text-align: center;
         }
     }
 
-    @media (max-width: 698px) {
+    @media (max-width: @maxwidth) {
         padding: 1rem;
     }
 }

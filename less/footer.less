@@ -6,11 +6,11 @@
         flex: 1;
         min-width: calc(25% - 2rem);
         border: none;
-        border-bottom: 1px solid #DFDEDB;
+        border-bottom: @border;
 
         ul {
             .footer-card-title {
-                color: #F5F4F3;
+                color: @title-color;
                 letter-spacing: 0.075rem;
                 margin-bottom: 1rem;
                 font: normal 400 0.75rem/0.875rem Neue Montreal;
@@ -18,29 +18,29 @@
 
             li {
                 list-style-type: none;
-                color: #F5F4F3;
+                color: @title-color;
                 letter-spacing: 0.075rem;
                 margin-bottom: 0.88rem;
                 font: normal 400 0.75rem/0.875rem Neue Montreal;
             }
         }
 
-        @media (max-width: 698px) {
+        @media (max-width: @maxwidth) {
             min-width: calc(50% - 2rem);
         }
     }
 
     .card1,
     .card2 {
-        border-right: 1px solid #DFDEDB;
+        border-right: @border;
 
-        @media (max-width: 698px) {
+        @media (max-width: @maxwidth) {
             margin-top: 3.56rem;
-            border-top: 1px solid #DFDEDB;
+            border-top: @border;
         }
     }
 
     .card3 {
-        border-right: 1px solid #DFDEDB;
+        border-right:@border;
     }
 }

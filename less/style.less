@@ -7,13 +7,22 @@
 @import "row.less";
 @import "navbar.less";
 
+@white: #fff;
+@darkblue: #323334;
+@lightorange: #F8F4E7;
+@border: 1px solid #DFDEDB;
+@text-color: #FCFDFD;
+@text-color-dark: #384353;
+@title-color: #F5F4F3;
+@maxwidth: 698px;
+
 body {
     margin: 0;
 
     .page1 {
         height: 737px;
-        color: #FCFDFD;
-        background-color: #FCFDFD;
+        color: @text-color;
+        background-color: @text-color;
         overflow-x: hidden;
         background: url('/assets/img/page1/page1.png') center center/cover no-repeat;
 
@@ -22,7 +31,7 @@ body {
             justify-content: center;
             padding-top: 2rem;
 
-            @media (max-width: 698px) {
+            @media (max-width: @maxwidth) {
                 padding-top: 11.44rem;
             }
 
@@ -31,7 +40,7 @@ body {
                 letter-spacing: -0.3rem;
                 margin-bottom: 3rem;
 
-                @media (max-width: 698px) {
+                @media (max-width: @maxwidth) {
                     font-size: 2.25rem;
                     line-height: 2.625rem;
                     letter-spacing: -0.045rem;
@@ -43,7 +52,7 @@ body {
                 padding: 0.5rem 2.25rem;
                 border: none;
                 border-radius: 0.5rem;
-                background: #F8F4E7;
+                background: @lightorange;
                 font: 400 0.95rem/0.875rem Neue Montreal;
                 letter-spacing: 0.075rem;
             }
@@ -59,7 +68,7 @@ body {
 
         .section-content {
             text-align: center;
-            color: #323334;
+            color: @darkblue;
             position: absolute;
             margin-top: 15rem;
             @media (max-width:698px) {
@@ -87,9 +96,9 @@ body {
                 font: 400 0.75rem/0.875rem Neue Montreal;
                 padding: 0.5rem 2.25rem;
                 border-radius: 0.5rem;
-                border: 1px solid #DFDEDB;
+                border: @border;
                 letter-spacing: 0.075rem;
-                background-color: #fff;
+                background-color: @white;
             }
 
             @media (max-width:698px) {
@@ -198,18 +207,18 @@ body {
     }
 
     .page3 {
-        color: #323334;
+        color: @darkblue;
         text-align: center;
 
         .section-bottom-title {
-            color: #323334;
+            color: @darkblue;
         }
 
         @media (min-width: 698px) {
 
             .product-name,
             .product-price {
-                color: #384353;
+                color: @text-color-dark;
             }
         }
 
@@ -218,7 +227,7 @@ body {
     .page4 {
         display: flex;
         flex-wrap: wrap;
-        background-color: #384353;
+        background-color: @text-color-dark;
         margin-top: 0;
 
         @media (max-width: 915px) {
@@ -252,8 +261,8 @@ body {
     }
 
     .page6 {
-        background: #384353;
-        color: #F5F4F3;
+        background: @text-color-dark;
+        color: @title-color;
         padding-bottom: 1rem;
 
         .product-info {
@@ -266,7 +275,7 @@ body {
                 padding-right: 1.12rem;
                 margin: auto 0 2.87rem;
 
-                @media (max-width: 698px) {
+                @media (max-width: @maxwidth) {
                     display: none;
                 }
             }
@@ -275,15 +284,15 @@ body {
                 width: 45%;
                 padding: 0 10rem;
                 text-align: center;
-                border-left: 1px solid #DFDEDB;
-                border-right: 1px solid #DFDEDB;
+                border-left: @border;
+                border-right: @border;
                 text-align: center;
 
                 h3 {
                     letter-spacing: -0.14rem;
                     font: 400 3.5rem/4rem Reckless Neue;
 
-                    @media (max-width: 698px) {
+                    @media (max-width: @maxwidth) {
                         margin-top: 0rem;
                     }
                 }
@@ -293,7 +302,7 @@ body {
                     margin-top: 25rem;
                     font: 400 0.9375rem/1.1875rem Neue Montreal;
 
-                    @media (max-width: 698px) {
+                    @media (max-width: @maxwidth) {
                         margin-top: 3.5rem;
                         margin-bottom: 3.5rem;
                     }
@@ -303,7 +312,7 @@ body {
                     padding: 1rem 1rem 0rem 1rem;
                 }
 
-                @media (max-width: 698px) {
+                @media (max-width: @maxwidth) {
                     width: 90%;
                     border: none;
                 }
@@ -322,7 +331,7 @@ body {
                     margin-top: auto;
                 }
 
-                @media (max-width: 698px) {
+                @media (max-width: @maxwidth) {
                     .main-item {
                         display: none;
                     }
@@ -340,7 +349,7 @@ body {
                     .img1 {
                         width: 100%;
 
-                        @media (max-width: 698px) {
+                        @media (max-width: @maxwidth) {
                             display: none;
                         }
                     }
@@ -348,20 +357,20 @@ body {
                     .img2 {
                         display: none;
 
-                        @media (max-width: 698px) {
+                        @media (max-width: @maxwidth) {
                             display: block;
                             width: 100%;
                         }
                     }
 
                     .row {
-                        color: #384353;
+                        color: @text-color-dark;
                         padding: 0;
                         margin: 0.62rem 0 5rem 0;
                     }
                 }
 
-                @media (max-width: 698px) {
+                @media (max-width: @maxwidth) {
                     width: 100%;
 
                     .row-block {
@@ -370,7 +379,7 @@ body {
                 }
             }
 
-            @media (max-width: 698px) {
+            @media (max-width: @maxwidth) {
                 display: block;
                 width: 100%;
             }
@@ -378,7 +387,7 @@ body {
 
         .section-title {
             margin: 0;
-            color: #F5F4F3;
+            color: @title-color;
             text-align: center;
         }
 
@@ -386,12 +395,12 @@ body {
 
             .product-name,
             .product-price {
-                color: #F5F4F3;
+                color: @title-color;
             }
         }
 
         .section-bottom-title {
-            color: #F5F4F3;
+            color: @title-color;
             text-align: center;
         }
     }
@@ -412,26 +421,26 @@ body {
                 margin-bottom: 2.87rem;
                 display: block;
 
-                @media (max-width: 698px) {
+                @media (max-width: @maxwidth) {
                     display: none;
                 }
             }
 
-            @media (max-width: 698px) {
+            @media (max-width: @maxwidth) {
                 display: contents;
             }
         }
 
         .text {
             .detail {
-                color: #fff;
+                color: @white;
                 user-select: none;
             }
 
             .content {
-                border-left: 1px solid #DFDEDB;
+                border-left: @border;
                 text-align: center;
-                color: #323334;
+                color: @darkblue;
 
                 h4 {
                     text-align: center;
@@ -460,26 +469,26 @@ body {
                         margin: 0 10rem;
                     }
 
-                    @media (max-width: 698px) {
+                    @media (max-width: @maxwidth) {
                         margin: 0 1rem 3.5rem;
                     }
                 }
 
-                @media (max-width: 698px) {
+                @media (max-width: @maxwidthx) {
                     padding: 0 1rem;
                 }
             }
         }
 
         .images {
-            border-top: 1px solid #DFDEDB;
+            border-top: @border;
             width: 100%;
 
             .order1 {
                 padding: .75rem;
                 padding-bottom: 1.13rem;
-                border-left: 1px solid #DFDEDB;
-                border-right: 1px solid #DFDEDB;
+                border-left: @border;
+                border-right: @border;
                 padding-right: 1.3rem;
                 padding-left: 1.3rem;
 
@@ -488,7 +497,7 @@ body {
                     height: 100%;
                 }
 
-                @media (max-width: 698px) {
+                @media (max-width: @maxwidth) {
                     padding: 0rem;
                 }
             }
@@ -507,7 +516,7 @@ body {
                 .img2 {
                     margin-bottom: 2rem;
 
-                    @media (max-width: 698px) {
+                    @media (max-width: @maxwidth) {
                         margin-bottom: 0rem;
                         padding-right: .5rem;
 
@@ -517,7 +526,7 @@ body {
                     }
                 }
 
-                @media (max-width: 698px) {
+                @media (max-width: @maxwidth) {
                     display: flex;
                     padding: 0 .5rem;
 
@@ -537,7 +546,7 @@ body {
             text-align: center;
             padding-top: 6.44rem;
 
-            @media (max-width: 698px) {
+            @media (max-width: @maxwidth) {
                 height: 41.5625rem;
 
                 img {
@@ -556,7 +565,7 @@ body {
                 flex: 1;
                 min-width: calc(33% - 2rem);
                 border: none;
-                border-bottom: 1px solid #DFDEDB;
+                border-bottom: @border;
                 padding-top: 1.5rem;
 
                 img {
@@ -564,7 +573,7 @@ body {
                 }
 
                 .article-text {
-                    color: #384353;
+                    color: @text-color-dark;
 
                     .title {
                         letter-spacing: -0.03rem;
@@ -582,14 +591,14 @@ body {
                     }
                 }
 
-                @media (max-width: 698px) {
+                @media (max-width: @maxwidth) {
                     border: none;
                 }
             }
 
             .article1,
             .article2 {
-                border-right: 1px solid #DFDEDB;
+                border-right: @border;
                 padding-right: .69rem;
             }
 
@@ -605,14 +614,14 @@ body {
             .article3 {
                 padding-left: .69rem;
 
-                @media (max-width: 698px) {
+                @media (max-width: @maxwidth) {
                     .subtitle {
                         margin-bottom: 1rem;
                     }
                 }
             }
 
-            @media (max-width: 698px) {
+            @media (max-width: @maxwidth) {
                 flex-wrap: nowrap;
                 display: block;
             }
@@ -621,7 +630,7 @@ body {
         .section-bottom-title,
         .section-title {
             text-align: center;
-            color: #323334;
+            color: @darkblue;
             margin: 0rem;
         }
 
@@ -630,9 +639,9 @@ body {
 
             .article-text {
                 width: 50%;
-                border-left: 1px solid #DFDEDB;
+                border-left: @border;
                 padding: 8.88rem 2.06rem 0;
-                color: #323334;
+                color: @darkblue;
 
                 h3 {
                     letter-spacing: -0.14rem;
@@ -641,7 +650,7 @@ body {
                 }
 
                 p {
-                    color: #384353;
+                    color: @text-color-dark;
                     margin: 3.5rem 0;
                     font: normal 400 0.9375rem/1.1875rem Neue Montreal;
                 }
@@ -667,7 +676,7 @@ body {
                 display: block;
             }
 
-            @media (max-width: 698px) {
+            @media (max-width: @maxwidth) {
                 display: none;
             }
         }
@@ -675,14 +684,14 @@ body {
         .change {
             display: none;
 
-            @media (max-width: 698px) {
+            @media (max-width: @maxwidth) {
                 display: flex;
             }
         }
     }
 
     .page0 {
-        background-color: #384353;
+        background-color: @text-color-dark;
         padding-bottom: 1.37rem;
 
         .logo {
@@ -696,7 +705,7 @@ body {
         }
 
         .section-bottom-title {
-            color: #F5F4F3;
+            color: @title-color;
         }
     }
 }
