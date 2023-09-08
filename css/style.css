@@ -275,17 +275,17 @@ body .page1 {
 body .page1 .content {
   text-align: center;
   justify-content: center;
-  padding-top: 5rem;
+  padding-top: 2rem;
 }
 @media (max-width: 698px) {
   body .page1 .content {
-    padding-top: 10.44rem;
+    padding-top: 11.44rem;
   }
 }
 body .page1 .content .section-title-main {
   font: 400 7rem/90% Reckless Neue;
   letter-spacing: -0.3rem;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
 }
 @media (max-width: 698px) {
   body .page1 .content .section-title-main {
@@ -302,6 +302,136 @@ body .page1 .content button {
   background: #F8F4E7;
   font: 400 0.95rem/0.875rem Neue Montreal;
   letter-spacing: 0.075rem;
+}
+body .page2 {
+  height: 1084px;
+  overflow-x: hidden;
+}
+@media (max-width: 698px) {
+  body .page2 {
+    height: 700px;
+  }
+}
+body .page2 .section-content {
+  text-align: center;
+  color: #323334;
+  position: absolute;
+  margin-top: 15rem;
+}
+@media (max-width: 698px) {
+  body .page2 .section-content {
+    margin-top: 8rem;
+  }
+}
+body .page2 .section-content h3 {
+  font: 400 72px/100% Reckless Neue;
+  letter-spacing: -3.6px;
+  margin-bottom: 2.5rem;
+}
+body .page2 .section-content p {
+  margin-left: 29rem;
+  margin-right: 29rem;
+  font: 400 15px/19px Neue Montreal;
+}
+@media (max-width: 1285px) {
+  body .page2 .section-content p {
+    margin-left: 20rem;
+    margin-right: 20rem;
+  }
+}
+body .page2 .section-content button {
+  font: 400 0.75rem/0.875rem Neue Montreal;
+  padding: 0.5rem 2.25rem;
+  border-radius: 0.5rem;
+  border: 1px solid #DFDEDB;
+  letter-spacing: 0.075rem;
+  background-color: #fff;
+}
+@media (max-width: 698px) {
+  body .page2 .section-content h3 {
+    font-size: 2.25rem;
+    line-height: 2.625rem;
+    letter-spacing: -0.045rem;
+  }
+  body .page2 .section-content p {
+    font-size: 0.9375rem;
+    line-height: 1.1875rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+body .page2 .image-container {
+  overflow: hidden;
+  display: flex;
+  position: absolute;
+  width: 100%;
+}
+body .page2 .image-container .img5 {
+  margin: 7rem 0 0 auto;
+}
+body .page2 .image-container .img3 {
+  margin: 12rem 6rem 0 auto;
+}
+body .page2 .image-container .img1 {
+  margin: 13rem 0 0 2.37rem;
+}
+body .page2 .image-container .img2 {
+  margin: 1.87rem 0 0 auto;
+}
+body .page2 .image-container .img4 {
+  margin-top: 6.75rem;
+}
+@media (max-width: 1285px) {
+  body .page2 .image-container .img1 {
+    margin-left: -4rem;
+  }
+  body .page2 .image-container .img1 img {
+    width: 6.375rem;
+    height: 5rem;
+  }
+  body .page2 .image-container .img2 img {
+    width: 9.1875rem;
+    height: 7.125rem;
+  }
+  body .page2 .image-container .img3 {
+    margin-top: 7rem;
+    margin-right: 0.5rem;
+  }
+  body .page2 .image-container .img3 img {
+    width: 4.75rem;
+    height: 3.625rem;
+  }
+  body .page2 .image-container .img4 {
+    margin-top: 14rem;
+    margin-left: -8rem;
+  }
+  body .page2 .image-container .img4 img {
+    width: 11.375rem;
+    height: 8rem;
+  }
+  body .page2 .image-container .img5 {
+    margin-top: 9rem;
+    margin-right: -2rem;
+  }
+  body .page2 .image-container .img5 img {
+    width: 9.75rem;
+    height: 7.875rem;
+  }
+  body .page2 .image-container .img6 {
+    margin-right: -4rem;
+  }
+  body .page2 .image-container .img6 img {
+    width: 5.5rem;
+    height: 5.8125rem;
+  }
+}
+body .page2 .cont2 {
+  margin-top: 30rem;
+}
+@media (max-width: 698px) {
+  body .page2 .cont2 {
+    margin-top: 15rem;
+  }
 }
 body .page3 {
   color: #323334;
@@ -415,6 +545,7 @@ body .page6 .product-info .lookbook-content p {
 @media (max-width: 698px) {
   body .page6 .product-info .lookbook-content p {
     margin-top: 3.5rem;
+    margin-bottom: 3.5rem;
   }
 }
 @media (max-width: 900px) {
@@ -427,6 +558,10 @@ body .page6 .product-info .lookbook-content p {
     width: 90%;
     border: none;
   }
+}
+body .page6 .product-info .lookbook-img {
+  display: flex;
+  flex-direction: column;
 }
 body .page6 .product-info .lookbook-img .categories,
 body .page6 .product-info .lookbook-img .produced {
@@ -472,8 +607,10 @@ body .page6 .product-info .lookbook-img .image-blog .row {
 }
 @media (max-width: 698px) {
   body .page6 .product-info .lookbook-img {
-    flex-direction: column-reverse;
     width: 100%;
+  }
+  body .page6 .product-info .lookbook-img .row-block {
+    order: -1;
   }
 }
 @media (max-width: 698px) {
@@ -507,7 +644,7 @@ body .page7 .images {
 body .page7 .text .detail,
 body .page7 .images .detail {
   transform: rotate(270deg);
-  width: 1.5rem;
+  width: 3rem;
   height: 1.5rem;
   padding-right: 1.12rem;
   margin-top: auto;
@@ -581,9 +718,11 @@ body .page7 .images .order1 {
   padding-bottom: 1.13rem;
   border-left: 1px solid #DFDEDB;
   border-right: 1px solid #DFDEDB;
+  padding-right: 1.3rem;
+  padding-left: 1.3rem;
 }
 body .page7 .images .order1 img {
-  max-width: 100%;
+  width: 100%;
   height: 100%;
 }
 @media (max-width: 698px) {
@@ -594,6 +733,8 @@ body .page7 .images .order1 img {
 body .page7 .images .order2 {
   padding: 0.75rem;
   padding-bottom: 1.13rem;
+  padding-right: 1.3rem;
+  padding-left: 1.3rem;
 }
 body .page7 .images .order2 img {
   max-width: 100%;
